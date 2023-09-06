@@ -1,0 +1,407 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg",
+      "genre_ids": [
+        878,
+        12,
+        28
+      ],
+      "id": 447365,
+      "original_language": "en",
+      "original_title": "Guardians of the Galaxy Vol. 3",
+      "overview": "Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.",
+      "popularity": 497.182,
+      "poster_path": "/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
+      "release_date": "2023-05-03",
+      "title": "Guardians of the Galaxy Vol. 3",
+      "video": false,
+      "vote_average": 8,
+      "vote_count": 4667
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7I6VUdPj6tQECNHdviJkUHD2u89.jpg",
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
+      "id": 603692,
+      "original_language": "en",
+      "original_title": "John Wick: Chapter 4",
+      "overview": "With the price on his head ever increasing, John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",
+      "popularity": 495.803,
+      "poster_path": "/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
+      "release_date": "2023-03-22",
+      "title": "John Wick: Chapter 4",
+      "video": false,
+      "vote_average": 7.8,
+      "vote_count": 4372
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lDCIQ1Qe7cRnhZ4ybQVVEbadMZ.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1008042,
+      "original_language": "en",
+      "original_title": "Talk to Me",
+      "overview": "When a group of friends discover how to conjure spirits using an embalmed hand, they become hooked on the new thrill, until one of them goes too far and unleashes terrifying supernatural forces.",
+      "popularity": 481.799,
+      "poster_path": "/kdPMUMJzyYAc4roD52qavX0nLIC.jpg",
+      "release_date": "2023-07-26",
+      "title": "Talk to Me",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 284
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sFpMBQtB4rXYeP2zm4KmyrMjw8u.jpg",
+      "genre_ids": [
+        28,
+        9648,
+        53,
+        27
+      ],
+      "id": 1006462,
+      "original_language": "en",
+      "original_title": "The Flood",
+      "overview": "A horde of giant hungry alligators is unleashed on a group of in-transit prisoners and their guards after a massive hurricane floods Louisiana.",
+      "popularity": 477.015,
+      "poster_path": "/mvjqqklMpHwOxc40rn7dMhGT0Fc.jpg",
+      "release_date": "2023-07-14",
+      "title": "The Flood",
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 185
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4Yon9Qmg3U4onL0OywXAHSkFTUG.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 1163045,
+      "original_language": "yo",
+      "original_title": "Jagun Jagun: The Warrior",
+      "overview": "A young man determined to become a powerful warrior joins an elite army, encountering the wrath of a maniacal warlord and the love of a fierce woman.",
+      "popularity": 469.626,
+      "poster_path": "/jTLgX0DgJS8vMCroe4NGgUD04jd.jpg",
+      "release_date": "2023-08-10",
+      "title": "Jagun Jagun: The Warrior",
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 38
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nYDPmxvl0if5vHBBp7pDYGkTFc7.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 709631,
+      "original_language": "en",
+      "original_title": "Cobweb",
+      "overview": "Eight year old Peter is plagued by a mysterious, constant tapping from inside his bedroom wall—one that his parents insist is all in his imagination. As Peter's fear intensifies, he believes that his parents could be hiding a terrible, dangerous secret and questions their trustworthiness.",
+      "popularity": 467.745,
+      "poster_path": "/cGXFosYUHYjjdKrOmA0bbjvzhKz.jpg",
+      "release_date": "2023-07-19",
+      "title": "Cobweb",
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 282
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/h0nmmdFAdBjQttN8Y0q825MWzZp.jpg",
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
+      "id": 926393,
+      "original_language": "en",
+      "original_title": "The Equalizer 3",
+      "overview": "Robert McCall finds himself at home in Southern Italy but he discovers his friends are under the control of local crime bosses. As events turn deadly, McCall knows what he has to do: become his friends' protector by taking on the mafia.",
+      "popularity": 456.613,
+      "poster_path": "/p0WBnzgyqxMxbF4UGiqTwBLnwht.jpg",
+      "release_date": "2023-08-30",
+      "title": "The Equalizer 3",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 81
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lntyt4OVDbcxA1l7LtwITbrD3FI.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1010581,
+      "original_language": "es",
+      "original_title": "Culpa mía",
+      "overview": "Noah must leave her city, boyfriend, and friends to move into William Leister's mansion, the flashy and wealthy husband of her mother Rafaela. As a proud and independent 17 year old, Noah resists living in a mansion surrounded by luxury. However, it is there where she meets Nick, her new stepbrother, and the clash of their strong personalities becomes evident from the very beginning.",
+      "popularity": 445.795,
+      "poster_path": "/w46Vw536HwNnEzOa7J24YH9DPRS.jpg",
+      "release_date": "2023-06-08",
+      "title": "My Fault",
+      "video": false,
+      "vote_average": 8.1,
+      "vote_count": 1607
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/A3m5GJu5kzAKK2wkGlzErlCCElT.jpg",
+      "genre_ids": [
+        16,
+        12,
+        28,
+        14
+      ],
+      "id": 900667,
+      "original_language": "ja",
+      "original_title": "ONE PIECE FILM RED",
+      "overview": "Uta — the most beloved singer in the world. Her voice, which she sings with while concealing her true identity, has been described as “otherworldly.” She will appear in public for the first time at a live concert. As the venue fills with all kinds of Uta fans — excited pirates, the Navy watching closely, and the Straw Hats led by Luffy who simply came to enjoy her sonorous performance — the voice that the whole world has been waiting for is about to resound.",
+      "popularity": 443.635,
+      "poster_path": "/ogDXuVkO92GcETZfSofXXemw7gb.jpg",
+      "release_date": "2022-08-06",
+      "title": "One Piece Film Red",
+      "video": false,
+      "vote_average": 7.4,
+      "vote_count": 658
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2G18rFnH0aarHmSXXQIIQ95uf0w.jpg",
+      "genre_ids": [
+        35,
+        12
+      ],
+      "id": 912908,
+      "original_language": "en",
+      "original_title": "Strays",
+      "overview": "When Reggie is abandoned on the mean city streets by his lowlife owner, Doug, Reggie is certain that his beloved owner would never leave him on purpose. But once Reggie falls in with a fast-talking, foul-mouthed stray who loves his freedom and believes that owners are for suckers, Reggie finally realizes he was in a toxic relationship and begins to see Doug for the heartless sleazeball that he is.",
+      "popularity": 440.293,
+      "poster_path": "/n1hqbSCtyBAxaXEl1Dj3ipXJAJG.jpg",
+      "release_date": "2023-08-17",
+      "title": "Strays",
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 51
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vi0cgWN36ztY9mfo8JndMk4HaCf.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        53
+      ],
+      "id": 1104771,
+      "original_language": "en",
+      "original_title": "My House",
+      "overview": "Carla lives life locked inside her house with her kind but tyrannical father. When their isolation is interrupted by a mysterious stranger, Carla questions the reasons for her family's withdrawal from the outside world and discovers dark secrets that redefine their existence.",
+      "popularity": 390.289,
+      "poster_path": "/dKP2cphhHAsw0ftInIbipWfgB1l.jpg",
+      "release_date": "2023-03-07",
+      "title": "My House",
+      "video": false,
+      "vote_average": 5.6,
+      "vote_count": 26
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/AioRI7M077BBR33VimFiyFop2Rc.jpg",
+      "genre_ids": [
+        28,
+        12,
+        53
+      ],
+      "id": 1149381,
+      "original_language": "pl",
+      "original_title": "Operacja: Soulcatcher",
+      "overview": "A military contractor hired to seize a weapon that turns people into savage killers seeks revenge when his brother falls victim to the device.",
+      "popularity": 380.951,
+      "poster_path": "/l1f9JSPjCfNftigEii1SDK1g2b3.jpg",
+      "release_date": "2023-08-02",
+      "title": "Soulcatcher",
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 161
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/axIU0Ay88ZSfZHL5AlsQm64Bcb8.jpg",
+      "genre_ids": [
+        16,
+        878,
+        28,
+        12
+      ],
+      "id": 1121575,
+      "original_language": "en",
+      "original_title": "Babylon 5: The Road Home",
+      "overview": "Travel across the galaxy with John Sheridan as he unexpectedly finds himself transported through multiple timelines and alternate realities in a quest to find his way back home. Along the way he reunites with some familiar faces, while discovering cosmic new revelations about the history, purpose, and meaning of the Universe.",
+      "popularity": 380.788,
+      "poster_path": "/qlXLiFKf2kvJ4K2VDBC5Z048vm3.jpg",
+      "release_date": "2023-08-15",
+      "title": "Babylon 5: The Road Home",
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 46
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2Cpg8hUn60PK9CW9d5SWf605Ah8.jpg",
+      "genre_ids": [
+        16,
+        35,
+        28
+      ],
+      "id": 614930,
+      "original_language": "en",
+      "original_title": "Teenage Mutant Ninja Turtles: Mutant Mayhem",
+      "overview": "After years of being sheltered from the human world, the Turtle brothers set out to win the hearts of New Yorkers and be accepted as normal teenagers through heroic acts. Their new friend April O'Neil helps them take on a mysterious crime syndicate, but they soon get in over their heads when an army of mutants is unleashed upon them.",
+      "popularity": 365.094,
+      "poster_path": "/ueO9MYIOHO7M1PiMUeX74uf8fB9.jpg",
+      "release_date": "2023-07-31",
+      "title": "Teenage Mutant Ninja Turtles: Mutant Mayhem",
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 334
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jv4tiXAgaArMQo57jFMjvBEjmoa.jpg",
+      "genre_ids": [
+        28,
+        18,
+        12
+      ],
+      "id": 980489,
+      "original_language": "en",
+      "original_title": "Gran Turismo",
+      "overview": "The ultimate wish-fulfillment tale of a teenage Gran Turismo player whose gaming skills won him a series of Nissan competitions to become an actual professional racecar driver.",
+      "popularity": 365.066,
+      "poster_path": "/51tqzRtKMMZEYUpSYkrUE7v9ehm.jpg",
+      "release_date": "2023-08-09",
+      "title": "Gran Turismo",
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 235
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7drO1kYgQ0PnnU87sAnBEphYrSM.jpg",
+      "genre_ids": [
+        16,
+        28,
+        27
+      ],
+      "id": 1083862,
+      "original_language": "ja",
+      "original_title": "バイオハザード：デスアイランド",
+      "overview": "In San Francisco, Jill Valentine is dealing with a zombie outbreak and a new T-Virus, Leon Kennedy is on the trail of a kidnapped DARPA scientist, and Claire Redfield is investigating a monstrous fish that is killing whales in the bay. Joined by Chris Redfield and Rebecca Chambers, they discover the trail of clues from their separate cases all converge on the same location, Alcatraz Island, where a new evil has taken residence and awaits their arrival.",
+      "popularity": 364.78,
+      "poster_path": "/qayga07ICNDswm0cMJ8P3VwklFZ.jpg",
+      "release_date": "2023-06-22",
+      "title": "Resident Evil: Death Island",
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 632
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jDjmnEuNUfWHg8rbW6u8mylkcO0.jpg",
+      "genre_ids": [
+        16,
+        14,
+        12,
+        10751,
+        35
+      ],
+      "id": 832502,
+      "original_language": "en",
+      "original_title": "The Monkey King",
+      "overview": "A stick-wielding monkey teams with a young girl on an epic quest for immortality, battling demons, dragons, gods — and his own ego — along the way.",
+      "popularity": 361.288,
+      "poster_path": "/i6ye8ueFhVE5pXatgyRrZ83LBD8.jpg",
+      "release_date": "2023-08-11",
+      "title": "The Monkey King",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 126
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8rpDcsfLJypbO6vREc0547VKqEv.jpg",
+      "genre_ids": [
+        878,
+        12,
+        28
+      ],
+      "id": 76600,
+      "original_language": "en",
+      "original_title": "Avatar: The Way of Water",
+      "overview": "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.",
+      "popularity": 358.858,
+      "poster_path": "/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+      "release_date": "2022-12-14",
+      "title": "Avatar: The Way of Water",
+      "video": false,
+      "vote_average": 7.7,
+      "vote_count": 9667
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/J0XkW5toJLGEucm1pLDvTHXaKC.jpg",
+      "genre_ids": [
+        28,
+        18,
+        10752
+      ],
+      "id": 1076487,
+      "original_language": "en",
+      "original_title": "Warhorse One",
+      "overview": "A gunned down Navy SEAL Master Chief must guide a child to safety through a gauntlet of hostile Taliban insurgents and survive the brutal Afghanistan wilderness.",
+      "popularity": 357.404,
+      "poster_path": "/jP2ik17jvKiV5sGEknMFbZv7WAe.jpg",
+      "release_date": "2023-06-30",
+      "title": "Warhorse One",
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 165
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6IafiYxaqR2MxCnEC29bi6637eo.jpg",
+      "genre_ids": [
+        28,
+        12,
+        53,
+        35
+      ],
+      "id": 457332,
+      "original_language": "en",
+      "original_title": "Hidden Strike",
+      "overview": "Two elite soldiers must escort civilians through a gauntlet of gunfire and explosions.",
+      "popularity": 356.566,
+      "poster_path": "/zsbolOkw8RhTU4DKOrpf4M7KCmi.jpg",
+      "release_date": "2023-07-06",
+      "title": "Hidden Strike",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 680
+    }
+  ],
+  "total_pages": 39904,
+  "total_results": 798080
+}

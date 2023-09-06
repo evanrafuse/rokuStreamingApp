@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- ##COPYRIGHT HEADER## -->
+
+<component name="CoreScreen" extends="Group">
+  <script type="text/brightscript" uri="CoreScreen.brs" />
+
+  <interface>
+    <field id="screenReady" type="boolean" value="false" alwaysNotify="true" />
+    <field id="isCancelled" type="boolean" value="false" alwaysNotify="true" />
+    <field id="killWhenHidden" type="bool" value="false" />
+    <field id="hasLoadSpinner" type="bool" value="true" />
+    <field id="hasTopMenu" type="bool" value="true" />
+    <field id="hasMenuOption" type="bool" value="true" />
+    <field id="topOfStack" type="bool" value="false" />
+    <field id="error" type="bool" value="false" />
+    <field id="isHidden" type="bool" value="false" />
+    <field id="state" type="string" value="Init" />
+    <field id="from" type="string" value="" />
+
+    <function name="screenFocus" />
+    <function name="screenShow" />
+    <function name="screenHide" />
+    <function name="screenKill" />
+  </interface>
+  <children />
+</component>
