@@ -11,13 +11,13 @@
     "stopOnEntry": false,
     "host": "${promptForHost}",
     "password": "${promptForPassword}",
-    "rootDir": "${workspaceFolder}/dist/",
+    "rootDir": "${workspaceFolder}/src/",
     //run the BrighterScript build before each launch
     "preLaunchTask": "build",
     "enableDebuggerAutoRecovery": true,
     "stopDebuggerOnAppExit": false,
-    "injectRaleTrackerTask": true
-  },
+    "injectRaleTrackerTask": false,
+    "fileLogging": true  },
   {
     "type": "brightscript",
     "request": "launch",
@@ -26,11 +26,13 @@
     "envFile": "${workspaceFolder}/.env",
     "host": "${env:ROKU_HOST}",
     "password": "${env:ROKU_PASSWORD}",
+    "rootDir": "${workspaceFolder}/src/",
     //run the BrighterScript build before each launch
     "preLaunchTask": "build",
     "enableDebuggerAutoRecovery": true,
     "stopDebuggerOnAppExit": false,
-    "injectRaleTrackerTask": false
+    "injectRaleTrackerTask": false,
+    "fileLogging": true
   }
 ]
 }

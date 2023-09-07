@@ -1,6 +1,7 @@
 node_modules
 dist
 out
+logs
 .roku-deploy-staging
 .DS_Store
 .env

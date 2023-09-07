@@ -1,0 +1,30 @@
+{
+  "api_keys":{
+    "tmdbKey":"5d9ba89dd8dddbd9f424a39c2e9993ec"
+  },
+  "tmdbConfig":{
+    "baseUrl":"https://api.themoviedb.org/3/",
+    "rating":"&include_adult=false",
+    "language": "&language=en-US",
+    "sortby":"&sort_by=popularity.desc",
+    "genre":"&with_genres=",
+    "rows": {
+      "movie":{
+        "featured":"discover/movie",
+        "popular":"movie/popular",
+        "top":"movie/top_rated"
+      },
+      "tv":{
+        "featured":"discover/tv",
+        "popular":"tv/popular",
+        "top":"tv/top_rated"
+      }
+    },
+    "defaultGenres":{
+      "movie":["Action", "Comedy", "Drama"],
+      "tv":["Reality","Drama","Comedy"]
+    },
+    "basePhotoUrl":"https://image.tmdb.org/t/p/",
+    "defaultPosterSize":"w200"
+  }
+}

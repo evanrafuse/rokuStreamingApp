@@ -5,6 +5,7 @@ end sub
 
 sub createRows()
   m.rowlist.content = m.top.rowContent
+  m.rowlist.setFocus(true)
 end sub
 
 sub screenShow(params)

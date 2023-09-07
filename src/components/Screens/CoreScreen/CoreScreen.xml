@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!-- ##COPYRIGHT HEADER## -->
 
 <component name="CoreScreen" extends="Group">
   <script type="text/brightscript" uri="CoreScreen.brs" />

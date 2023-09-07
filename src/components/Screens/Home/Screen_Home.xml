@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!-- ##COPYRIGHT HEADER## -->
 
 <component name="Screen_Home" extends="CoreScreen">
   <script type="text/brightscript" uri="Screen_Home.brs" />
@@ -10,15 +9,14 @@
   </interface>
 
   <children>
-    <Label id="helloWorld" translation="[200,200]" text="Hello, World!" />
     <RowList
       id = "exampleRowList"
-      translation = "[ 130, 160 ]"
+      translation = "[ 100, 100 ]"
       itemComponentName = "RowListItem"
       numRows = "3"
-      itemSize = "[ 1608, 308 ]"
-      rowItemSize = "[ [536, 308] ]"
-      itemSpacing = "[ 0, 40 ]"
+      itemSize = "[ 1920, 400 ]"
+      rowItemSize = "[ [300, 200] ]"
+      itemSpacing = "[ 0, 0 ]"
       showRowLabel = "[ true ]"
       drawFocusFeedback = "false"
       vertFocusAnimationStyle = "fixedFocusWrap"
