@@ -1,6 +1,6 @@
 {
   "api_keys":{
-    "tmdbKey":"5d9ba89dd8dddbd9f424a39c2e9993ec"
+    "tmdbKey":""
   },
   "tmdbConfig":{
     "baseUrl":"https://api.themoviedb.org/3/",

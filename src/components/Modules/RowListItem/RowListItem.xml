@@ -4,7 +4,6 @@
   <interface >
     <field id = "itemContent" type = "node" onChange = "showcontent"/>
   </interface>
-
   <children >
     <Poster
       id = "itemPoster"
