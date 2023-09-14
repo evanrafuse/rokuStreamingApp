@@ -1,0 +1,417 @@
+{
+  "page": 1,
+  "results": [
+  {
+  "adult": false,
+  "backdrop_path": "/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg",
+  "genre_ids": [
+  35,
+  12,
+  14
+  ],
+  "id": 346698,
+  "original_language": "en",
+  "original_title": "Barbie",
+  "overview": "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.",
+  "popularity": 3661.8,
+  "poster_path": "/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
+  "release_date": "2023-07-19",
+  "title": "Barbie",
+  "video": false,
+  "vote_average": 7.3,
+  "vote_count": 4286
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/4fLZUr1e65hKPPVw0R3PmKFKxj1.jpg",
+  "genre_ids": [
+  16,
+  35,
+  10751,
+  14,
+  10749
+  ],
+  "id": 976573,
+  "original_language": "en",
+  "original_title": "Elemental",
+  "overview": "In a city where fire, water, land and air residents live together, a fiery young woman and a go-with-the-flow guy will discover something elemental: how much they have in common.",
+  "popularity": 1153.497,
+  "poster_path": "/6oH378KUfCEitzJkm07r97L0RsZ.jpg",
+  "release_date": "2023-06-14",
+  "title": "Elemental",
+  "video": false,
+  "vote_average": 7.8,
+  "vote_count": 1921
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/2ii07lSwHarg0gWnJoCYL3Gyd1j.jpg",
+  "genre_ids": [
+  35,
+  12
+  ],
+  "id": 912908,
+  "original_language": "en",
+  "original_title": "Strays",
+  "overview": "When Reggie is abandoned on the mean city streets by his lowlife owner, Doug, Reggie is certain that his beloved owner would never leave him on purpose. But once Reggie falls in with Bug, a fast-talking, foul-mouthed stray who loves his freedom and believes that owners are for suckers, Reggie finally realizes he was in a toxic relationship and begins to see Doug for the heartless sleazeball that he is.",
+  "popularity": 849.081,
+  "poster_path": "/n1hqbSCtyBAxaXEl1Dj3ipXJAJG.jpg",
+  "release_date": "2023-08-17",
+  "title": "Strays",
+  "video": false,
+  "vote_average": 7.4,
+  "vote_count": 230
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/w2nFc2Rsm93PDkvjY4LTn17ePO0.jpg",
+  "genre_ids": [
+  16,
+  35,
+  28
+  ],
+  "id": 614930,
+  "original_language": "en",
+  "original_title": "Teenage Mutant Ninja Turtles: Mutant Mayhem",
+  "overview": "After years of being sheltered from the human world, the Turtle brothers set out to win the hearts of New Yorkers and be accepted as normal teenagers through heroic acts. Their new friend April O'Neil helps them take on a mysterious crime syndicate, but they soon get in over their heads when an army of mutants is unleashed upon them.",
+  "popularity": 792.214,
+  "poster_path": "/ueO9MYIOHO7M1PiMUeX74uf8fB9.jpg",
+  "release_date": "2023-07-31",
+  "title": "Teenage Mutant Ninja Turtles: Mutant Mayhem",
+  "video": false,
+  "vote_average": 7.2,
+  "vote_count": 426
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/rRcNmiH55Tz0ugUsDUGmj8Bsa4V.jpg",
+  "genre_ids": [
+  35,
+  10749
+  ],
+  "id": 884605,
+  "original_language": "en",
+  "original_title": "No Hard Feelings",
+  "overview": "On the brink of losing her childhood home, Maddie discovers an intriguing job listing: wealthy helicopter parents looking for someone to “date” their introverted 19-year-old son, Percy, before he leaves for college. To her surprise, Maddie soon discovers the awkward Percy is no sure thing.",
+  "popularity": 454.506,
+  "poster_path": "/gD72DhJ7NbfxvtxGiAzLaa0xaoj.jpg",
+  "release_date": "2023-06-15",
+  "title": "No Hard Feelings",
+  "video": false,
+  "vote_average": 7.2,
+  "vote_count": 1222
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/9n2tJBplPbgR2ca05hS5CKXwP2c.jpg",
+  "genre_ids": [
+  16,
+  10751,
+  12,
+  14,
+  35
+  ],
+  "id": 502356,
+  "original_language": "en",
+  "original_title": "The Super Mario Bros. Movie",
+  "overview": "While working underground to fix a water main, Brooklyn plumbers—and brothers—Mario and Luigi are transported down a mysterious pipe and wander into a magical new world. But when the brothers are separated, Mario embarks on an epic quest to find Luigi.",
+  "popularity": 427.862,
+  "poster_path": "/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg",
+  "release_date": "2023-04-05",
+  "title": "The Super Mario Bros. Movie",
+  "video": false,
+  "vote_average": 7.8,
+  "vote_count": 6582
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/vcQQx1z5iUbqZ3uJXvfCCMN3HPb.jpg",
+  "genre_ids": [
+  28,
+  35
+  ],
+  "id": 869855,
+  "original_language": "nl",
+  "original_title": "H4Z4RD",
+  "overview": "Noah loves his girlfriend Lea and their daughter Zita dearly, just about as much as his extremely pimped car with vanity plate “H4Z4RD”. When his cousin offers him a seemingly simple job as a driver, it soon turns into an unlikely and nerve-racking race through Antwerp, which can only result in the end of Noah, his family or the car…",
+  "popularity": 320.187,
+  "poster_path": "/1dviyIqBrbnigrbodIvfMQj8mJ0.jpg",
+  "release_date": "2022-07-20",
+  "title": "H4Z4RD",
+  "video": false,
+  "vote_average": 6.4,
+  "vote_count": 15
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/6IafiYxaqR2MxCnEC29bi6637eo.jpg",
+  "genre_ids": [
+  28,
+  12,
+  53,
+  35
+  ],
+  "id": 457332,
+  "original_language": "en",
+  "original_title": "Hidden Strike",
+  "overview": "Two elite soldiers must escort civilians through a gauntlet of gunfire and explosions.",
+  "popularity": 290.491,
+  "poster_path": "/zsbolOkw8RhTU4DKOrpf4M7KCmi.jpg",
+  "release_date": "2023-07-06",
+  "title": "Hidden Strike",
+  "video": false,
+  "vote_average": 7.1,
+  "vote_count": 710
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/f7UI3dYpr7ZUHGo0iIr1Qvy1VPe.jpg",
+  "genre_ids": [
+  16,
+  10751,
+  14,
+  35
+  ],
+  "id": 1040148,
+  "original_language": "en",
+  "original_title": "Ruby Gillman, Teenage Kraken",
+  "overview": "Ruby Gillman, a sweet and awkward high school student, discovers she's a direct descendant of the warrior kraken queens. The kraken are sworn to protect the oceans of the world against the vain, power-hungry mermaids. Destined to inherit the throne from her commanding grandmother, Ruby must use her newfound powers to protect those she loves most.",
+  "popularity": 256.744,
+  "poster_path": "/kgrLpJcLBbyhWIkK7fx1fM4iSvf.jpg",
+  "release_date": "2023-06-28",
+  "title": "Ruby Gillman, Teenage Kraken",
+  "video": false,
+  "vote_average": 7.5,
+  "vote_count": 633
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/b1Y8SUb12gPHCSSSNlbX4nB3IKy.jpg",
+  "genre_ids": [
+  16,
+  10751,
+  14,
+  12,
+  35,
+  28
+  ],
+  "id": 315162,
+  "original_language": "en",
+  "original_title": "Puss in Boots: The Last Wish",
+  "overview": "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.",
+  "popularity": 244.435,
+  "poster_path": "/kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
+  "release_date": "2022-12-07",
+  "title": "Puss in Boots: The Last Wish",
+  "video": false,
+  "vote_average": 8.3,
+  "vote_count": 6324
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/hkx6p7bTw2dOs4nSk6ZGTnEjCjW.jpg",
+  "genre_ids": [
+  35,
+  18
+  ],
+  "id": 37265,
+  "original_language": "it",
+  "original_title": "Così fan tutte",
+  "overview": "After five years of marriage, Diana discovers the joys of adultery, claiming that she can save her failing relationship through betrayal.",
+  "popularity": 238.609,
+  "poster_path": "/sVOdtRA4bwZmrVE3qzdJH73jOhL.jpg",
+  "release_date": "1992-02-21",
+  "title": "All Ladies Do It",
+  "video": false,
+  "vote_average": 4.7,
+  "vote_count": 318
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/a2pORKd7quQ0kn4GhhwLwbGoDqz.jpg",
+  "genre_ids": [
+  16,
+  35,
+  12
+  ],
+  "id": 1088812,
+  "original_language": "en",
+  "original_title": "SpongeBob SquarePants Presents The Tidal Zone",
+  "overview": "GrandPat travels through alternate dimensions and timelines to get home.",
+  "popularity": 242.545,
+  "poster_path": "/rozwpOPiTEYnXygWGvUPST4lVQa.jpg",
+  "release_date": "2023-01-13",
+  "title": "SpongeBob SquarePants Presents The Tidal Zone",
+  "video": false,
+  "vote_average": 8.3,
+  "vote_count": 11
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/jDjmnEuNUfWHg8rbW6u8mylkcO0.jpg",
+  "genre_ids": [
+  16,
+  14,
+  12,
+  10751,
+  35
+  ],
+  "id": 832502,
+  "original_language": "en",
+  "original_title": "The Monkey King",
+  "overview": "A stick-wielding monkey teams with a young girl on an epic quest for immortality, battling demons, dragons, gods — and his own ego — along the way.",
+  "popularity": 198.876,
+  "poster_path": "/i6ye8ueFhVE5pXatgyRrZ83LBD8.jpg",
+  "release_date": "2023-08-11",
+  "title": "The Monkey King",
+  "video": false,
+  "vote_average": 7,
+  "vote_count": 151
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/qDFb1ZDvUqJvPF7HniZnmLXsDpQ.jpg",
+  "genre_ids": [
+  35,
+  10749
+  ],
+  "id": 791295,
+  "original_language": "es",
+  "original_title": "Casi muerta",
+  "overview": "María and Javi are two lifelong friends. Even though they have drifted apart over the course of the last year, when María suffers an accident that leaves her at the verge of dying, they reunite and discover that they have always been in love. Now Javi has to decide whether he continues with his new life with an Uruguayan girlfriend, or give a chance to a childhood love that could die out any second.",
+  "popularity": 177.533,
+  "poster_path": "/gSezYOBs7H3RG8rDcjsK3MqluxN.jpg",
+  "release_date": "2023-07-06",
+  "title": "Casi muerta",
+  "video": false,
+  "vote_average": 7.5,
+  "vote_count": 14
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/7F7SdcPBD5nUHgbX1F6niKd4ofp.jpg",
+  "genre_ids": [
+  10749,
+  35,
+  18
+  ],
+  "id": 936952,
+  "original_language": "en",
+  "original_title": "Sitting in Bars with Cake",
+  "overview": "Extrovert Corinne convinces Jane, a shy, talented baker, to commit to a year of bringing cakes to bars, to help her meet people and build confidence. But when Corinne receives a life-altering diagnosis, the pair faces a challenge unlike anything they've experienced before.",
+  "popularity": 271.594,
+  "poster_path": "/kGENInUWI9tRVg4ae8XAVgAWpEi.jpg",
+  "release_date": "2023-09-07",
+  "title": "Sitting in Bars with Cake",
+  "video": false,
+  "vote_average": 7.4,
+  "vote_count": 26
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/b9UCfDzwiWw7mIFsIQR9ZJUeh7q.jpg",
+  "genre_ids": [
+  28,
+  35,
+  10749
+  ],
+  "id": 868759,
+  "original_language": "en",
+  "original_title": "Ghosted",
+  "overview": "Salt-of-the-earth Cole falls head over heels for enigmatic Sadie — but then makes the shocking discovery that she’s a secret agent. Before they can decide on a second date, Cole and Sadie are swept away on an international adventure to save the world.",
+  "popularity": 147.91,
+  "poster_path": "/liLN69YgoovHVgmlHJ876PKi5Yi.jpg",
+  "release_date": "2023-04-18",
+  "title": "Ghosted",
+  "video": false,
+  "vote_average": 7.1,
+  "vote_count": 1288
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/zRQITMLvVi8z2Xz12Bi6wvbZE82.jpg",
+  "genre_ids": [
+  35,
+  28,
+  14
+  ],
+  "id": 594767,
+  "original_language": "en",
+  "original_title": "Shazam! Fury of the Gods",
+  "overview": "Billy Batson and his foster siblings, who transform into superheroes by saying \"Shazam!\", are forced to get back into action and fight the Daughters of Atlas, who they must stop from using a weapon that could destroy the world.",
+  "popularity": 152.689,
+  "poster_path": "/A3ZbZsmsvNGdprRi2lKgGEeVLEH.jpg",
+  "release_date": "2023-03-15",
+  "title": "Shazam! Fury of the Gods",
+  "video": false,
+  "vote_average": 6.7,
+  "vote_count": 2377
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/aEVYGOIrhWDrNoZxVhhSazmRjeR.jpg",
+  "genre_ids": [
+  35,
+  27,
+  28
+  ],
+  "id": 1070514,
+  "original_language": "ja",
+  "original_title": "ゾン100～ゾンビになるまでにしたい100のこと～",
+  "overview": "Bullied by his boss, worked around the clock, he's nothing more than a corporate drone. All it takes is a zombie outbreak for him to finally feel alive!",
+  "popularity": 148.705,
+  "poster_path": "/kD35dB3KOHrLo1Y3RU5xXJ1hI7.jpg",
+  "release_date": "2023-08-03",
+  "title": "Zom 100: Bucket List of the Dead",
+  "video": false,
+  "vote_average": 6.9,
+  "vote_count": 333
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/3G1Q5xF40HkUBJXxt2DQgQzKTp5.jpg",
+  "genre_ids": [
+  16,
+  35,
+  10751,
+  14
+  ],
+  "id": 568124,
+  "original_language": "en",
+  "original_title": "Encanto",
+  "overview": "The tale of an extraordinary family, the Madrigals, who live hidden in the mountains of Colombia, in a magical house, in a vibrant town, in a wondrous, charmed place called an Encanto. The magic of the Encanto has blessed every child in the family—every child except one, Mirabel. But when she discovers that the magic surrounding the Encanto is in danger, Mirabel decides that she, the only ordinary Madrigal, might just be her exceptional family's last hope.",
+  "popularity": 167.854,
+  "poster_path": "/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg",
+  "release_date": "2021-10-13",
+  "title": "Encanto",
+  "video": false,
+  "vote_average": 7.6,
+  "vote_count": 8562
+  },
+  {
+  "adult": false,
+  "backdrop_path": "/askg3SMvhqEl4OL52YuvdtY40Yb.jpg",
+  "genre_ids": [
+  10751,
+  16,
+  14,
+  10402,
+  35,
+  12
+  ],
+  "id": 354912,
+  "original_language": "en",
+  "original_title": "Coco",
+  "overview": "Despite his family’s baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the stunning and colorful Land of the Dead following a mysterious chain of events. Along the way, he meets charming trickster Hector, and together, they set off on an extraordinary journey to unlock the real story behind Miguel's family history.",
+  "popularity": 143.152,
+  "poster_path": "/gGEsBPAijhVUFoiNpgZXqRVWJt2.jpg",
+  "release_date": "2017-10-27",
+  "title": "Coco",
+  "video": false,
+  "vote_average": 8.2,
+  "vote_count": 17638
+  }
+  ],
+  "total_pages": 6023,
+  "total_results": 120443
+  }

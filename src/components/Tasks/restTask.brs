@@ -19,7 +19,8 @@ sub makeRequest()
         if (code > 300)
           ? "restTask Redirected!"
         end if
-        m.top.response = msg.getstring()
+        response = ParseJSON(msg.getstring())
+        m.top.response = {"index":m.top.request.index, "content":response}
         urlTransfer.asynccancel()
       else
         ? "API Request Error: "; msg.getfailurereason();" "; code;

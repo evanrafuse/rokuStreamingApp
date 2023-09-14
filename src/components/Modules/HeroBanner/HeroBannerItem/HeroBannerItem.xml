@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="HeroBannerItem" extends="Group">
+  <script type="text/brightscript" uri="HeroBannerItem.brs" />
+
+  <interface>
+  </interface>
+
+  <children>
+    <Poster
+      id=""
+      uri="https://image.tmdb.org/t/p/w500/8pjWz2lt29KyVGoq1mXYu6Br7dE.jpg"
+    />
+    <HeroDetails
+      id="heroDetails"
+    />
+  </children>
+</component>

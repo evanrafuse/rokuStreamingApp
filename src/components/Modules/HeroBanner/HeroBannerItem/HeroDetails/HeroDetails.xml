@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="HeroDetails" extends="Group">
+  <script type="text/brightscript" uri="HeroDetails.brs" />
+
+  <interface>
+  </interface>
+
+  <children>
+    <Poster
+      id="movieLogo"
+      uri="https://image.tmdb.org/t/p/w500/xjzbSDGtnxnr2E1eXWTEcmVbuZR.png"
+    />
+    <Label
+      id="genre"
+      text = "Genre"
+    />
+    <Label
+      id="date"
+      text = "Date"
+    />
+    <Label
+      id="rating"
+      text = "Rating"
+    />
+    <Label
+      id="description"
+      text = "Description"
+    />
+    <Button
+      id="play"
+      text="Play Now"
+    />
+    <Button
+      id="favorite"
+      text="Add to List"
+    />
+  </children>
+</component>

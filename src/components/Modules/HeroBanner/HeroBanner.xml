@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="HeroBanner" extends="Group">
+  <script type="text/brightscript" uri="HeroBanner.brs" />
+
+  <interface>
+    <field id="heroContent" type="array" onChange="createHero" />
+  </interface>
+
+  <children>
+    <HeroBannerItem/>
+  </children>
+</component>

@@ -5,20 +5,25 @@
 
   <interface>
     <field id="exitApp" type="boolean" value="false" />
-    <field id="rowContent" type="node" onChange="createRows" />
+    <field id="heroContent" type="array" onChange="createHero" />
+    <field id="rowContent" type="array" onChange="createRows" />
   </interface>
 
   <children>
+    <HeroBanner
+      id = "heroBanner"
+    />
     <RowList
       id = "exampleRowList"
-      translation = "[ 100, 100 ]"
+      translation = "[ 100, 500 ]"
       itemComponentName = "RowListItem"
       numRows = "3"
       itemSize = "[ 1920, 400 ]"
-      rowItemSize = "[ [300, 200] ]"
+      rowItemSize = "[ [200, 300] ]"
       itemSpacing = "[ 0, 0 ]"
+      rowItemSpacing = "[ [ 30, 0 ] ]"
       showRowLabel = "[ true ]"
-      drawFocusFeedback = "false"
+      drawFocusFeedback = "true"
       vertFocusAnimationStyle = "fixedFocusWrap"
       rowFocusAnimationStyle = "fixedFocusWrap" />
   </children>

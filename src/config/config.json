@@ -7,18 +7,12 @@
     "rating":"&include_adult=false",
     "language": "&language=en-US",
     "sortby":"&sort_by=popularity.desc",
+    "heroSlides":5,
     "genre":"&with_genres=",
-    "rows": {
-      "movie":{
-        "featured":"discover/movie",
-        "popular":"movie/popular",
-        "top":"movie/top_rated"
-      },
-      "tv":{
-        "featured":"discover/tv",
-        "popular":"tv/popular",
-        "top":"tv/top_rated"
-      }
+    "urlPath":{
+      "genre":"discover/movie",
+      "popular":"movie/popular",
+      "top":"movie/top_rated"
     },
     "defaultGenres":{
       "movie":["Action", "Comedy", "Drama"],

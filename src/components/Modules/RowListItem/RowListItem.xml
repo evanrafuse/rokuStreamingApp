@@ -7,7 +7,7 @@
   <children >
     <Poster
       id = "itemPoster"
-      translation = "[ 10, 10 ]"
+      translation = "[ 0, 0 ]"
       width = "200"
       height = "300"/>
   </children>

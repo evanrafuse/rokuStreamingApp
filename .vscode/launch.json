@@ -16,8 +16,9 @@
     "preLaunchTask": "build",
     "enableDebuggerAutoRecovery": true,
     "stopDebuggerOnAppExit": false,
-    "injectRaleTrackerTask": false,
-    "fileLogging": true  },
+    "injectRaleTrackerTask": true,
+    "enableDebugProtocol": true
+    },
   {
     "type": "brightscript",
     "request": "launch",
@@ -31,8 +32,8 @@
     "preLaunchTask": "build",
     "enableDebuggerAutoRecovery": true,
     "stopDebuggerOnAppExit": false,
-    "injectRaleTrackerTask": false,
-    "fileLogging": true
+    "injectRaleTrackerTask": true,
+    "enableDebugProtocol": true
   }
 ]
 }
