@@ -12,6 +12,12 @@
     <HeroBanner
       id = "heroBanner"
     />
+    <Poster
+      id="backgroundPoster"
+      translation = "[ 0, 540 ]"
+      uri = "pkg:/assets/images/rowBackground.png"
+      opacity="0.5"
+    />
     <RowList
       id = "exampleRowList"
       translation = "[ 100, 560 ]"
@@ -24,6 +30,7 @@
       showRowLabel = "[ true ]"
       drawFocusFeedback = "true"
       vertFocusAnimationStyle = "fixedFocusWrap"
-      rowFocusAnimationStyle = "fixedFocusWrap" />
+      rowFocusAnimationStyle = "fixedFocusWrap"
+    />
   </children>
 </component>

@@ -1,4 +1,8 @@
 sub init()
+  m.top.layoutDirection = "vert"
+  m.top.horizAlignment = "center"
+  ' m.top.vertAlignment = "center"
+  m.top.itemSpacings = [25]
   m.config = ParseJson(ReadAsciiFile("pkg:/config/config.json"))
   m.categoryIds = ParseJson(ReadAsciiFile("pkg:/config/categoryIds.json"))
   m.movieLogo = m.top.findNode("movieLogo")

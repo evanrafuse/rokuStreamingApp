@@ -11,16 +11,18 @@
       uri="pkg:/assets/images/blackbackground.png"
       width="960"
       height="10"
-      translation="[0,0]"
     />
     <Poster
       id="movieLogo"
       uri="https://image.tmdb.org/t/p/w500/xjzbSDGtnxnr2E1eXWTEcmVbuZR.png"
-      width="900"
+      height="200"
     />
     <Label
       id="descriptionLabel"
       text = "Description"
+      wrap = "true"
+      width="800"
+      maxLines = "6"
     />
   </children>
 </component>
