@@ -1,7 +1,6 @@
 sub init()
   m.top.layoutDirection = "vert"
   m.top.horizAlignment = "center"
-  ' m.top.vertAlignment = "center"
   m.top.itemSpacings = [25]
   m.config = ParseJson(ReadAsciiFile("pkg:/config/config.json"))
   m.categoryIds = ParseJson(ReadAsciiFile("pkg:/config/categoryIds.json"))
@@ -12,6 +11,7 @@ sub init()
 end sub
 
 sub updateHeroDetails(obj)
+  m.top.logoReady = false
   content = obj.getData()
   getHeroLogo(content.id)
   m.descLbl.text = content.overview
@@ -38,6 +38,7 @@ sub onHeroLogoResponse(obj)
   end for
   ' ? "onHeroLogoResponse: "; heroLogoUrl
   m.movieLogo.uri = heroLogoUrl
+  m.top.logoReady = true
 end sub
 
 function onKeyEvent(key, press) as Boolean

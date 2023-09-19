@@ -5,5 +5,10 @@
     <field id="apiCalls" type="integer" value="0" />
   </interface>
   <children>
+    <Poster
+      id = "loadingOverlay"
+      visible = "true"
+      uri = "pkg:/assets/images/splash-screen_hd.png"
+    />
   </children>
 </component>

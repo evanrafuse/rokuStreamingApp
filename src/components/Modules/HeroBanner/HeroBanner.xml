@@ -5,6 +5,7 @@
 
   <interface>
     <field id="heroContent" type="AssocArray" onChange="updateHero" />
+    <field id="heroReady" type="boolean" value="false" />
   </interface>
 
   <children>

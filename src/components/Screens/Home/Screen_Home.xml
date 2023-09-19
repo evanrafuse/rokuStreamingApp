@@ -13,10 +13,18 @@
       id = "heroBanner"
     />
     <Poster
-      id="backgroundPoster"
+      id = "heroLoadingOverlay"
+      translation = "[ 0,0 ]"
+      height = "540"
+      width = "1920"
+      visible = "true"
+      uri = "pkg:/assets/images/heroLoadingOverlay.png"
+    />
+    <Poster
+      id = "backgroundPoster"
       translation = "[ 0, 540 ]"
       uri = "pkg:/assets/images/rowBackground.png"
-      opacity="0.5"
+      opacity = "0.3"
     />
     <RowList
       id = "exampleRowList"
@@ -26,8 +34,9 @@
       itemSize = "[ 1920, 400 ]"
       rowItemSize = "[ [200, 300] ]"
       itemSpacing = "[ 0, 0 ]"
-      rowItemSpacing = "[ [ 30, 0 ] ]"
+      rowItemSpacing = "[ [ 20, 0 ] ]"
       showRowLabel = "[ true ]"
+      rowLabelOffset = "[ [ 0, 20 ] ]"
       drawFocusFeedback = "true"
       vertFocusAnimationStyle = "fixedFocusWrap"
       rowFocusAnimationStyle = "fixedFocusWrap"

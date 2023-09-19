@@ -2,6 +2,8 @@ sub init()
   label = m.top.FindNode("helloWorld")
   m.config = ParseJson(ReadAsciiFile("pkg:/config/config.json"))
   m.heroBanner = m.top.findNode("heroBanner")
+  m.heroLoadingOverlay = m.top.findNode("heroLoadingOverlay")
+  m.heroBanner.ObserveFieldScoped("heroReady", "heroReadyStatus")
   m.rowList = m.top.findNode("exampleRowList")
   m.rowList.ObserveFieldScoped("rowItemFocused","changeFocus")
 end sub
@@ -20,6 +22,7 @@ sub createRows()
   end for
   m.rowList.content = rowContentData
   m.rowList.setFocus(true)
+  m.top.screenReady = true
 end sub
 
 sub changeFocus(obj)
@@ -28,6 +31,15 @@ sub changeFocus(obj)
   col = newFocus[1]
   contentData = m.top.rowContent[row].content[col]
   m.heroBanner.heroContent = contentData
+end sub
+
+sub heroReadyStatus(obj)
+  status = obj.getData()
+  if status
+    m.heroLoadingOverlay.visible = false
+  else
+    m.heroLoadingOverlay.visible = true
+  end if
 end sub
 
 sub screenShow(params)

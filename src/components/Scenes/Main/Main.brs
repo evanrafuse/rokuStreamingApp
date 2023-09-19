@@ -1,6 +1,7 @@
 sub init()
   m.top.backgroundColor = "0x000000FF"
   m.top.backgroundURI = ""
+  m.loadingOverlay = m.top.findNode("loadingOverlay")
   ' m.useFallbacks = true
   m.useFallbacks = false
   m.rowContent = []
@@ -69,6 +70,15 @@ end sub
 
 sub createHome()
   screen_home = m.top.createChild("Screen_Home")
+  screen_home.ObserveFieldScoped("screenReady", "hideLoadingOverlay")
   screen_home.rowContent = m.rowContent
-  ' should probably set screenReady for screen_home here and hide splash
+end sub
+
+sub hideLoadingOverlay(obj)
+  status = obj.getData()
+  if status
+    m.loadingOverlay.visible = false
+  else
+    m.loadingOverlay.visible = true
+  end if
 end sub

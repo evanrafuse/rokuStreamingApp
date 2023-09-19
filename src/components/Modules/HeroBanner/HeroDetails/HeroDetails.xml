@@ -3,7 +3,8 @@
 <component name="HeroDetails" extends="LayoutGroup">
   <script type="text/brightscript" uri="HeroDetails.brs" />
   <interface>
-  <field id="heroDetailsContent" type="AssocArray" onChange="updateHeroDetails" />
+    <field id="heroDetailsContent" type="AssocArray" onChange="updateHeroDetails" />
+    <field id="logoReady" type="boolean" value="false" />
   </interface>
   <children>
     <Poster
@@ -22,7 +23,7 @@
       text = "Description"
       wrap = "true"
       width="800"
-      maxLines = "6"
+      maxLines = "5"
     />
   </children>
 </component>
