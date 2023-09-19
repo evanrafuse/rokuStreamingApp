@@ -1,12 +1,9 @@
 sub init()
   label = m.top.FindNode("helloWorld")
+  m.config = ParseJson(ReadAsciiFile("pkg:/config/config.json"))
   m.heroBanner = m.top.findNode("heroBanner")
-  m.rowlist = m.top.findNode("exampleRowList")
-end sub
-
-sub createHero()
-  ' This feels dumb
-  m.heroBanner.heroContent = m.top.heroContent
+  m.rowList = m.top.findNode("exampleRowList")
+  m.rowList.ObserveFieldScoped("rowItemFocused","changeFocus")
 end sub
 
 sub createRows()
@@ -21,8 +18,16 @@ sub createRows()
       newShow.HDPosterUrl = posterUrl
     end for
   end for
-  m.rowlist.content = rowContentData
-  m.rowlist.setFocus(true)
+  m.rowList.content = rowContentData
+  m.rowList.setFocus(true)
+end sub
+
+sub changeFocus(obj)
+  newFocus = obj.getData()
+  row = newFocus[0]
+  col = newFocus[1]
+  contentData = m.top.rowContent[row].content[col]
+  m.heroBanner.heroContent = contentData
 end sub
 
 sub screenShow(params)

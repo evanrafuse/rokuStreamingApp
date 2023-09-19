@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<component name="HeroBanner" extends="Group">
+<component name="HeroBanner" extends="LayoutGroup">
   <script type="text/brightscript" uri="HeroBanner.brs" />
 
   <interface>
-    <field id="heroContent" type="array" onChange="createHero" />
+    <field id="heroContent" type="AssocArray" onChange="updateHero" />
   </interface>
 
   <children>
-    <HeroBannerItem/>
+    <Poster
+      id="moviePoster"
+      uri="https://image.tmdb.org/t/p/w500/8pjWz2lt29KyVGoq1mXYu6Br7dE.jpg"
+      width="960"
+      height="540"
+    />
+    <HeroDetails
+      id="heroDetails"
+    />
   </children>
 </component>

@@ -5,7 +5,6 @@
 
   <interface>
     <field id="exitApp" type="boolean" value="false" />
-    <field id="heroContent" type="array" onChange="createHero" />
     <field id="rowContent" type="array" onChange="createRows" />
   </interface>
 
@@ -15,9 +14,9 @@
     />
     <RowList
       id = "exampleRowList"
-      translation = "[ 100, 500 ]"
+      translation = "[ 100, 560 ]"
       itemComponentName = "RowListItem"
-      numRows = "3"
+      numRows = "4"
       itemSize = "[ 1920, 400 ]"
       rowItemSize = "[ [200, 300] ]"
       itemSpacing = "[ 0, 0 ]"
