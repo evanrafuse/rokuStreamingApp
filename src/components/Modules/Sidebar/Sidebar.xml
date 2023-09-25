@@ -1,0 +1,48 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name = "Sidebar" extends = "Group" >
+  <script type="text/brightscript" uri="Sidebar.brs" />
+  <interface >
+    <field id = "focusSideBar" type = "boolean" onChange = "showSideBar"/>
+  </interface>
+  <children >
+    <Poster
+      uri="pkg:/assets/images/sidebarBackground.png"
+      width="200"
+    />
+    <LayoutGroup
+      id="sideBarIcons"
+      translation="[50,250]"
+      layoutDirection="vert"
+      itemSpacings="[40]"
+    >
+      <Poster
+        id="homeIcon"
+        uri="pkg:/assets/images/homeIcon.png"
+        width="100"
+        height="100"
+        blendColor="0x96969696"
+      />
+      <Poster
+        id="searchIcon"
+        uri="pkg:/assets/images/searchIcon.png"
+        width="100"
+        height="100"
+        blendColor="0x96969696"
+      />
+      <Poster
+        id="heartIcon"
+        uri="pkg:/assets/images/heartIcon.png"
+        width="100"
+        height="100"
+        blendColor="0x96969696"
+      />
+      <Poster
+        id="settingsIcon"
+        uri="pkg:/assets/images/settingsIcon.png"
+        width="100"
+        height="100"
+        blendColor="0x96969696"
+      />
+    </LayoutGroup>
+  </children>
+</component>
