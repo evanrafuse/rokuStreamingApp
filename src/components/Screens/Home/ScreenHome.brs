@@ -57,11 +57,11 @@ sub animateSideBar(obj)
   m.sideBarAnim.control = "start"
 end sub
 
-sub screenShow(params)
-end sub
+' sub screenShow(params)
+' end sub
 
-sub screenFocus(params)
-end sub
+' sub screenFocus(params)
+' end sub
 
 function onKeyEvent(key, press) as Boolean
   handled = false

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="SearchScreen" extends="CoreScreen">
+  <script type="text/brightscript" uri="SearchScreen.brs" />
+
+  <interface>
+  </interface>
+  <children>
+    <Poster
+      id="example"
+      uri="pkg:/assets/images/heroLoadingOverlay.png"
+    />
+  </children>
+</component>

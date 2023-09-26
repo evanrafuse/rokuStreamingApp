@@ -2,7 +2,8 @@ sub init()
   m.top.backgroundColor = "0x000000FF"
   m.top.backgroundURI = ""
   m.loadingOverlay = m.top.findNode("loadingOverlay")
-  ' m.useFallbacks = true
+  m.ScreenManager = createObject("roSGNode", "ScreenManager")
+  m.ScreenManager.ObserveFieldScoped("screenReady", "hideLoadingOverlay")
   m.useFallbacks = false
   m.rowContent = []
   getConfig()
@@ -40,7 +41,7 @@ sub getRowContent(params)
   m.contentTask = createObject("roSGNode", "restTask")
   m.contentTask.observeField("response", "onRowContentResponse")
   m.contentTask.request = {"url":url, "index":params.index}
-  ' ? "getRowContent at: "; url
+  ? "getRowContent at: "; url
   m.contentTask.control = "RUN"
 end sub
 
@@ -69,9 +70,14 @@ sub getRowFallback()
 end sub
 
 sub createHome()
-  screen_home = m.top.createChild("Screen_Home")
-  screen_home.ObserveFieldScoped("screenReady", "hideLoadingOverlay")
-  screen_home.rowContent = m.rowContent
+  params = {
+    "index":"homeScreen",
+    "content":m.rowContent
+  }
+  m.ScreenManager.callFunc("goForward", params)
+  ' screenHome = m.top.createChild("ScreenHome")
+  ' screenHome.ObserveFieldScoped("screenReady", "hideLoadingOverlay")
+  ' screenHome.rowContent = m.rowContent
 end sub
 
 sub hideLoadingOverlay(obj)

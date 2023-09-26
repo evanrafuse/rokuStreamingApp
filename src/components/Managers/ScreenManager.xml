@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="ScreenManager" extends="Node">
+  <script type="text/brightscript" uri="ScreenManager.brs" />
+
+  <interface>
+    <field id="screenStack" type="array" value="[]" />
+    <field id="screenReady" type="boolean" value="false" />
+    <function name="goForward" />
+    <function name="goBack" />
+  </interface>
+
+  <children>
+  </children>
+</component>
