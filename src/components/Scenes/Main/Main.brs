@@ -2,8 +2,9 @@ sub init()
   m.top.backgroundColor = "0x000000FF"
   m.top.backgroundURI = ""
   m.loadingOverlay = m.top.findNode("loadingOverlay")
-  m.ScreenManager = createObject("roSGNode", "ScreenManager")
-  m.ScreenManager.ObserveFieldScoped("screenReady", "hideLoadingOverlay")
+  ScreenManager = createObject("roSGNode", "ScreenManager")
+  m.global.addFields({"screenManager":ScreenManager})
+  m.global.screenManager.ObserveFieldScoped("screenReady", "hideLoadingOverlay")
   m.useFallbacks = false
   m.rowContent = []
   getConfig()
@@ -74,7 +75,7 @@ sub createHome()
     "index":"homeScreen",
     "content":m.rowContent
   }
-  m.ScreenManager.callFunc("goForward", params)
+  m.global.screenManager.callFunc("goForward", params)
   ' screenHome = m.top.createChild("ScreenHome")
   ' screenHome.ObserveFieldScoped("screenReady", "hideLoadingOverlay")
   ' screenHome.rowContent = m.rowContent

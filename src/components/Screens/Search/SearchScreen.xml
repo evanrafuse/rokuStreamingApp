@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="SearchScreen" extends="CoreScreen">
+  <script type="text/brightscript" uri="SearchScreen.brs" />
+
+  <interface>
+  </interface>
+  <children>
+    <Poster
+      id="searchLoadingOverlay"
+      uri="pkg:/assets/images/searchLoadingOverlay.png"
+      width="1260"
+      height="1080"
+      translation="[660, 0]"
+    />
+    <MiniKeyboard
+      id="keyboard"
+      translation="[35, 100]"
+    />
+    <Button
+      id="searchBtn"
+      translation="[60, 790]"
+      minWidth="200"
+      text="Search"
+      iconUri=""
+      focusedIconUri=""
+    />
+  </children>
+</component>

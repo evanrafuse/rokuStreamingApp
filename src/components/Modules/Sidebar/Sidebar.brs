@@ -35,8 +35,21 @@ sub navigateSideBar(key)
 end sub
 
 sub showScreen()
-  ? "Show Screen!"
-  ' Call screen manager here?
+  if 0 = m.buttonIndex
+    ' Home Screen
+    ? "Open Home Screen"
+  else if 1 = m.buttonIndex
+    ' Search Screen
+    ' ? "Open Search Screen"
+    m.global.screenManager.callFunc("goForward", {"index":"searchScreen"})
+  else if 2 = m.buttonIndex
+    ' Favorites Screen
+    ? "Open Favorites Screen"
+  else if 3 = m.buttonIndex
+    ' Settings Screen
+    ? "Open Settings Screen"
+  end if
+  ' m.global.screenManager
 end sub
 
 function onKeyEvent(key, press) as Boolean

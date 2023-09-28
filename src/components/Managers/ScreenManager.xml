@@ -4,7 +4,6 @@
   <script type="text/brightscript" uri="ScreenManager.brs" />
 
   <interface>
-    <field id="screenStack" type="array" value="[]" />
     <field id="screenReady" type="boolean" value="false" />
     <function name="goForward" />
     <function name="goBack" />

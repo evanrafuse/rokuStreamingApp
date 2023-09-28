@@ -1,15 +1,22 @@
 sub init()
   m.scene = m.top.GetScene()
+  m.screenStack = []
 end sub
 
 sub goForward(params)
+  if 0 < m.screenStack.Count()
+    previousScreen = m.screenStack.Peek()
+  end if
   if "homeScreen" = params.index
-    screenHome = m.scene.createChild("ScreenHome")
-    m.top.screenStack.Push(screenHome)
-    screenHome.ObserveFieldScoped("screenReady", "showScreen")
-    screenHome.rowContent = params.content
+    homeScreen = m.scene.createChild("homeScreen")
+    m.screenStack.Push(homeScreen)
+    homeScreen.ObserveFieldScoped("screenReady", "showScreen")
+    homeScreen.rowContent = params.content
   else if "searchScreen" = params.index
     ?"Show Search Screen!"
+    searchScreen = m.scene.createChild("SearchScreen")
+    m.screenStack.Push(searchScreen)
+    previousScreen.visible = false
   end if
 
 end sub
