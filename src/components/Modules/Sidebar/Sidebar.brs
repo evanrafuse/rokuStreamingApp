@@ -10,8 +10,14 @@ end sub
 
 sub showSideBar(obj)
   showSideBarFlag = obj.getData()
-  m.homeIcon.blendColor = "0xFFFFFFFF"
-  m.homeIcon.setFocus(true)
+  if showSideBarFlag
+    m.buttonIndex = 0
+    m.searchIcon.blendColor = "0x96969696"
+    m.heartIcon.blendColor = "0x96969696"
+    m.settingsIcon.blendColor = "0x96969696"
+    m.homeIcon.blendColor = "0xFFFFFFFF"
+    m.homeIcon.setFocus(true)
+  end if
 end sub
 
 sub navigateSideBar(key)
@@ -35,21 +41,16 @@ sub navigateSideBar(key)
 end sub
 
 sub showScreen()
+  m.top.focusSideBar = false
   if 0 = m.buttonIndex
-    ' Home Screen
-    ? "Open Home Screen"
+    m.global.screenManager.callFunc("goForward", {"index":"HomeScreen"})
   else if 1 = m.buttonIndex
-    ' Search Screen
-    ' ? "Open Search Screen"
-    m.global.screenManager.callFunc("goForward", {"index":"searchScreen"})
+    m.global.screenManager.callFunc("goForward", {"index":"SearchScreen"})
   else if 2 = m.buttonIndex
-    ' Favorites Screen
     ? "Open Favorites Screen"
   else if 3 = m.buttonIndex
-    ' Settings Screen
     ? "Open Settings Screen"
   end if
-  ' m.global.screenManager
 end sub
 
 function onKeyEvent(key, press) as Boolean

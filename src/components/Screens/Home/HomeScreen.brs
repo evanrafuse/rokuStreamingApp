@@ -26,7 +26,16 @@ sub createRows()
   end for
   m.rowList.content = rowContentData
   m.rowList.setFocus(true)
-  m.top.screenReady = true
+  m.top.showScreen = true
+end sub
+
+sub showScreen(obj)
+  show = obj.getData()
+  if show
+    m.rowList.setFocus(true)
+    m.sideBar.focusSideBar = false
+    m.global.screenManager.screenReady = true
+  end if
 end sub
 
 sub changeFocus(obj)

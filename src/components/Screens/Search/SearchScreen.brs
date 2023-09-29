@@ -2,7 +2,24 @@ sub init()
   m.keyboard = m.top.FindNode("keyboard")
   m.searchBtn = m.top.FindNode("searchBtn")
   m.searchBtn.ObserveFieldScoped("buttonSelected", "searchBtnInput")
+
+  m.sideBar = m.top.findNode("sideBar")
+  m.sideBarAnim = m.top.findNode("sideBarAnim")
+  m.sideBarSlideAnim = m.top.findNode("sideBarSlideAnim")
+  m.sideBar.ObserveFieldScoped("focusSideBar","animateSideBar")
+
   m.keyboard.setFocus(true)
+end sub
+
+sub animateSideBar(obj)
+  showing = obj.getData()
+  if showing
+    m.sideBarSlideAnim.keyValue = [[-200,0],[0,0]]
+  else
+    m.sideBarSlideAnim.keyValue = [[0,0],[-200,0]]
+    m.keyboard.setFocus(true)
+  end if
+  m.sideBarAnim.control = "start"
 end sub
 
 sub searchBtnInput(event)
@@ -22,8 +39,9 @@ function onKeyEvent(key, press) as Boolean
       if m.searchBtn.hasFocus()
         m.keyboard.setFocus(true)
       end if
-      ' use has focus to check if the group is focused
-      ' write logic for navigation down here
+    else if "options" = key or "left" = key
+        ?"Show sidebar!! "
+        m.sideBar.focusSideBar = true
     end if
   end if
   return handled

@@ -17,14 +17,12 @@ sub getConfig()
     getRowFallback()
     createHome()
   else
-    ' Featured Row
-    getRowContent({"index":"Most Popular", "rowType":"popular"})
+    getRowContent({"index":"Most Popular", "rowType":"popular"}) 'Featured Row
+    ' getRowContent({"index":"Top Rated", "rowType":"top"})
     for each category in m.config.tmdbConfig.defaultGenres.movie
       params = {"index":category, "rowType":"genre"}
       getRowContent(params)
     end for
-    ' Can add Top Rated or other static categories here
-    ' getRowContent({"index":"Top Rated", "rowType":"top"})
   end if
 end sub
 
@@ -72,13 +70,10 @@ end sub
 
 sub createHome()
   params = {
-    "index":"homeScreen",
+    "index":"HomeScreen",
     "content":m.rowContent
   }
   m.global.screenManager.callFunc("goForward", params)
-  ' screenHome = m.top.createChild("ScreenHome")
-  ' screenHome.ObserveFieldScoped("screenReady", "hideLoadingOverlay")
-  ' screenHome.rowContent = m.rowContent
 end sub
 
 sub hideLoadingOverlay(obj)
