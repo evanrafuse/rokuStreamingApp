@@ -12,6 +12,24 @@
       width="1260"
       height="1080"
       translation="[660, 0]"
+      visible="false"
+    />
+    <Label
+      id="searchLbl"
+      translation="[660,100]"
+      text="Search Results for ..."
+      font="font:LargeBoldSystemFont"
+      visible="false"
+    />
+    <PosterGrid
+      id="resultsGrid"
+      translation="[660,150]"
+      basePosterSize="[300,450]"
+      numColumns="4"
+      numRows="4"
+      fixedLayout="false"
+      itemSpacing="[10,10]"
+      rowSpacings="[10,10]"
     />
     <MiniKeyboard
       id="keyboard"

@@ -20,6 +20,9 @@ sub createRows()
     for each show in row.content
       newShow = contentData.CreateChild("ContentNode")
       newShow.title = show.title
+      if invalid = show.poster_path
+        show.poster_path = "pkg:/assets/images/posterPlaceholder.png"
+      end if
       posterUrl = "https://image.tmdb.org/t/p/w200" + show.poster_path
       newShow.HDPosterUrl = posterUrl
     end for
