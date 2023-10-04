@@ -27,11 +27,10 @@ sub createRows()
     end for
   end for
   m.rowList.content = rowContentData
-  ' m.rowList.setFocus(true)
-  showScreen()
+  screenShow()
 end sub
 
-sub showScreen()
+sub screenShow()
   m.rowList.setFocus(true)
   m.sideBar.focusSideBar = false
   m.global.screenManager.screenReady = true
@@ -65,12 +64,6 @@ sub animateSideBar(obj)
   end if
   m.sideBarAnim.control = "start"
 end sub
-
-' sub screenShow(params)
-' end sub
-
-' sub screenFocus(params)
-' end sub
 
 function onKeyEvent(key, press) as Boolean
   handled = false

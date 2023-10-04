@@ -17,7 +17,6 @@
     <field id="from" type="string" value="" />
 
     <function name="screenFocus" />
-    <function name="screenShow" />
     <function name="screenHide" />
     <function name="screenKill" />
   </interface>

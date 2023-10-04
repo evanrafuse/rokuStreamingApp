@@ -73,7 +73,7 @@ sub createHome()
     "index":"HomeScreen",
     "content":m.rowContent
   }
-  m.global.screenManager.callFunc("goForward", params)
+  m.global.screenManager.callFunc("openScreen", params)
 end sub
 
 sub hideLoadingOverlay(obj)

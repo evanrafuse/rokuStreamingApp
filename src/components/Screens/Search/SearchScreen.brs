@@ -11,12 +11,6 @@ sub init()
   m.resultsGrid.ObserveFieldScoped("itemSelected", "resultSelected")
   m.searchLoadingOverlay = m.top.FindNode("searchLoadingOverlay")
 
-  m.sideBar = m.top.findNode("sideBar")
-  m.sideBarAnim = m.top.findNode("sideBarAnim")
-  m.sideBarSlideAnim = m.top.findNode("sideBarSlideAnim")
-  m.sideBar.ObserveFieldScoped("focusSideBar","animateSideBar")
-
-  m.keyboard.setFocus(true)
 end sub
 
 sub searchBtnInput(event)
@@ -70,15 +64,10 @@ sub clearSearch()
   m.keyboard.text = ""
 end sub
 
-sub animateSideBar(obj)
-  showing = obj.getData()
-  if showing
-    m.sideBarSlideAnim.keyValue = [[-200,0],[0,0]]
-  else
-    m.sideBarSlideAnim.keyValue = [[0,0],[-200,0]]
-    m.keyboard.setFocus(true)
-  end if
-  m.sideBarAnim.control = "start"
+sub screenShow()
+  m.keyboard.setFocus(true)
+  m.global.screenManager.screenReady = true
+  m.top.visible = true
 end sub
 
 function onKeyEvent(key, press) as Boolean
@@ -93,11 +82,8 @@ function onKeyEvent(key, press) as Boolean
         m.keyboard.setFocus(true)
       end if
     else if "options" = key
-      m.sideBar.focusSideBar = true
     else if "left" = key
-      if m.keyboard.isInFocusChain() or m.searchBtn.hasFocus()
-        m.sideBar.focusSideBar = true
-      else
+      if m.resultsGrid.isInFocusChain()
         m.keyboard.setFocus(true)
       end if
     else if "right" = key
@@ -109,7 +95,8 @@ function onKeyEvent(key, press) as Boolean
         m.keyboard.setFocus(true)
       else
         clearSearch()
-        m.global.screenManager.callFunc("goBack", {"index":"SearchScreen"})
+        ? "Go Back!"
+        m.global.screenManager.callFunc("goBack", {"index":"SearchScreen", "previousScreen":"HomeScreen"})
       end if
       handled = true
     end if

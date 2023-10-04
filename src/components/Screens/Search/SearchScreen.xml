@@ -4,6 +4,7 @@
   <script type="text/brightscript" uri="SearchScreen.brs" />
 
   <interface>
+    <function name="screenShow" />
   </interface>
   <children>
     <Poster
@@ -43,21 +44,5 @@
       iconUri=""
       focusedIconUri=""
     />
-    <Sidebar
-      id = "sideBar"
-      translation="[-200, 0]"
-    />
-    <Animation
-      id="sideBarAnim"
-      duration="0.5"
-      repeat="false"
-      easeFunction="linear">
-      <Vector2DFieldInterpolator
-        id="sideBarSlideAnim"
-        fieldToInterp="sideBar.translation"
-        key="[0.0, 1.0]"
-        keyValue="[ [-200, 0], [0, 0] ]"
-      />
-    </Animation>
   </children>
 </component>

@@ -1,7 +1,5 @@
 sub init()
-  m.homeIcon = m.top.findNode("homeIcon")
   m.sideBarIcons = m.top.findNode("sideBarIcons")
-  m.homeIcon = m.top.findNode("homeIcon")
   m.searchIcon = m.top.findNode("searchIcon")
   m.heartIcon = m.top.findNode("heartIcon")
   m.settingsIcon = m.top.findNode("settingsIcon")
@@ -12,11 +10,10 @@ sub showSideBar(obj)
   showSideBarFlag = obj.getData()
   if showSideBarFlag
     m.buttonIndex = 0
-    m.searchIcon.blendColor = "0x96969696"
+    m.searchIcon.blendColor = "0xFFFFFFFF"
     m.heartIcon.blendColor = "0x96969696"
     m.settingsIcon.blendColor = "0x96969696"
-    m.homeIcon.blendColor = "0xFFFFFFFF"
-    m.homeIcon.setFocus(true)
+    m.searchIcon.setFocus(true)
   end if
 end sub
 
@@ -30,7 +27,7 @@ sub navigateSideBar(key)
       nextIcon.setFocus(true)
     end if
   else if "up" = key
-    if false = m.homeIcon.hasFocus()
+    if false = m.searchIcon.hasFocus()
       m.sideBarIcons.getChild(m.buttonIndex).blendColor = "0x96969696"
       m.buttonIndex--
       nextIcon = m.sideBarIcons.getChild(m.buttonIndex)
@@ -43,12 +40,10 @@ end sub
 sub showScreen()
   m.top.focusSideBar = false
   if 0 = m.buttonIndex
-    m.global.screenManager.callFunc("goForward", {"index":"HomeScreen"})
+    m.global.screenManager.callFunc("openScreen", {"index":"SearchScreen"})
   else if 1 = m.buttonIndex
-    m.global.screenManager.callFunc("goForward", {"index":"SearchScreen"})
-  else if 2 = m.buttonIndex
     ? "Open Favorites Screen"
-  else if 3 = m.buttonIndex
+  else if 2 = m.buttonIndex
     ? "Open Settings Screen"
   end if
 end sub

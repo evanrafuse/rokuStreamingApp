@@ -8,10 +8,6 @@ sub init()
 end sub
 
 
-sub screenShow(params)
-end sub
-
-
 sub screenFocus(params)
 end sub
 

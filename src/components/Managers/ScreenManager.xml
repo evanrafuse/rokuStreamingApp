@@ -5,7 +5,7 @@
 
   <interface>
     <field id="screenReady" type="boolean" value="false" />
-    <function name="goForward" />
+    <function name="openScreen" />
     <function name="goBack" />
   </interface>
 
