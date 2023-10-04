@@ -1,5 +1,4 @@
 sub init()
-  label = m.top.FindNode("helloWorld")
   m.config = ParseJson(ReadAsciiFile("pkg:/config/config.json"))
   m.heroBanner = m.top.findNode("heroBanner")
   m.heroLoadingOverlay = m.top.findNode("heroLoadingOverlay")
@@ -28,17 +27,15 @@ sub createRows()
     end for
   end for
   m.rowList.content = rowContentData
-  m.rowList.setFocus(true)
-  m.top.showScreen = true
+  ' m.rowList.setFocus(true)
+  showScreen()
 end sub
 
-sub showScreen(obj)
-  show = obj.getData()
-  if show
-    m.rowList.setFocus(true)
-    m.sideBar.focusSideBar = false
-    m.global.screenManager.screenReady = true
-  end if
+sub showScreen()
+  m.rowList.setFocus(true)
+  m.sideBar.focusSideBar = false
+  m.global.screenManager.screenReady = true
+  m.top.visible = true
 end sub
 
 sub changeFocus(obj)

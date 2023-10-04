@@ -21,9 +21,10 @@ end sub
 
 sub searchBtnInput(event)
   input = event.getData()
-  url = "https://api.themoviedb.org/3/search/movie?include_adult=false&language=en-US&page=1" + "&api_key=" + m.config.api_keys.tmdbKey + "&query=" + m.keyboard.text
-  m.searchLbl.text = "Search Results for "+ chr(34) + m.keyboard.text + chr(34)
-  m.keyboard.text = ""
+  key = "?api_key=" + m.config.api_keys.tmdbKey
+  rating = m.config.tmdbConfig.rating
+  lang = m.config.tmdbConfig.language
+  url = m.config.tmdbConfig.baseUrl + "search/movie" + key + rating + lang + "&query=" + m.keyboard.text
   m.contentTask = createObject("roSGNode", "restTask")
   m.contentTask.observeField("response", "onSearchResponse")
   m.contentTask.request = {"url":url, "index":"Search"}
@@ -36,28 +37,37 @@ sub onSearchResponse(obj)
   response = obj.getData()
   m.results = response.content
   m.resultsGridContent = createObject("roSGNode","ContentNode")
-  for each result in m.results
-    gridposter = createObject("roSGNode","ContentNode")
-    if invalid <> result.poster_path
-      gridposter.hdposterurl = "https://image.tmdb.org/t/p/w200/"+result.poster_path
-      gridposter.sdposterurl = "https://image.tmdb.org/t/p/w200/"+result.poster_path
-    else
-      gridposter.hdposterurl = "pkg:/assets/images/posterPlaceholder.png"
-      gridposter.sdposterurl = "pkg:/assets/images/posterPlaceholder.png"
-    end if
-    gridposter.shortdescriptionline1 = "TEST 1"
-    gridposter.shortdescriptionline2 = "TEST 2"
-    m.resultsGridContent.appendChild(gridposter)
-  end for
-  m.resultsGrid.content = m.resultsGridContent
+  if 0 = m.results.count()
+    m.searchLbl.text = "No Results for "+ chr(34) + m.keyboard.text + chr(34)
+  else
+    m.searchLbl.text = "Search Results for "+ chr(34) + m.keyboard.text + chr(34)
+    for each result in m.results
+      gridposter = createObject("roSGNode","ContentNode")
+      if invalid <> result.poster_path
+        gridposter.hdposterurl = "https://image.tmdb.org/t/p/w200/"+result.poster_path
+        gridposter.sdposterurl = "https://image.tmdb.org/t/p/w200/"+result.poster_path
+      else
+        gridposter.hdposterurl = "pkg:/assets/images/posterPlaceholder.png"
+        gridposter.sdposterurl = "pkg:/assets/images/posterPlaceholder.png"
+      end if
+      m.resultsGridContent.appendChild(gridposter)
+    end for
+    m.resultsGrid.content = m.resultsGridContent
+    m.resultsGrid.setFocus(true)
+  end if
   m.searchLoadingOverlay.visible = false
   m.searchLbl.visible = true
-  m.resultsGrid.setFocus(true)
 end sub
 
 sub resultSelected(obj)
   selection = obj.getData()
   ? "Selection: "; m.results[selection]
+end sub
+
+sub clearSearch()
+  m.searchLbl.visible = false
+  m.resultsGrid.visible = false
+  m.keyboard.text = ""
 end sub
 
 sub animateSideBar(obj)
@@ -94,6 +104,14 @@ function onKeyEvent(key, press) as Boolean
       if m.resultsGrid.visible
         m.resultsGrid.setFocus(true)
       end if
+    else if "back" = key
+      if m.resultsGrid.isInFocusChain()
+        m.keyboard.setFocus(true)
+      else
+        clearSearch()
+        m.global.screenManager.callFunc("goBack", {"index":"SearchScreen"})
+      end if
+      handled = true
     end if
   end if
   return handled

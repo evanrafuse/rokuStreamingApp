@@ -23,14 +23,11 @@ sub goForward(params)
     m.currentScreen.visible = true
   else if "SearchScreen" = params.index
     searchScreen = m.screens.Lookup(params.index)
-    ' ? "currentScreen: "; m.currentScreen
     m.previousScreen = m.currentScreen
     if invalid = searchScreen
-      ?"create search screen"
       searchScreen = m.scene.createChild("SearchScreen")
       m.screens.AddReplace(params.index, searchScreen)
     else
-      ' ?"nagivate to search screen"
       searchScreen.visible = true
       searchScreen.FindNode("keyboard").setFocus(true)
     end if
@@ -45,8 +42,33 @@ sub showScreen(obj)
   m.top.screenReady = hideLoading
 end sub
 
-sub goBack(obj)
-  screen = obj.getData()
+sub goBack(params)
+  ? m.screens.count()
+  screen = params.index
+  if 3 > m.screens.count()
+    ? "In IF"
+    home = m.screens.Lookup("HomeScreen")
+    home.callFunc("showScreen")
+    ' ? "Current Screen: "
+    m.screens.Lookup(m.navHistory.peek()).visible = false
+    ' search = m.screens.Lookup("SearchScreen")
+    ' search.visible = false
+    ' home.visible = true
+    ' home.showScreen = true
+  end if
+  ' ? m.currentScreen
+  ' m.currentScreen.visible = false
+  ' ? m.currentScreen
+  ' ' m.currentScreen = m.screens.Lookup(m.navHistory.pop())
+  ' m.navHistory.pop()
+  ' m.currentScreen = m.screens.Lookup(m.navHistory.peek())
+  ' index = m.navHistory.count()-2
+  ' ? index
+  ' indexString = m.navHistory[index]
+  ' ? indexString
+  ' m.previousScreen = m.screens.Lookup(indexString)
+  ' ? m.previousScreen
+  ' m.currentScreen.visible = true
 end sub
 
 sub hideScreen()
