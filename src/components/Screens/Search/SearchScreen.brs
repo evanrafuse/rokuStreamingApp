@@ -33,6 +33,7 @@ sub onSearchResponse(obj)
   m.resultsGridContent = createObject("roSGNode","ContentNode")
   if 0 = m.results.count()
     m.searchLbl.text = "No Results for "+ chr(34) + m.keyboard.text + chr(34)
+    m.resultsGrid.visible = false
   else
     m.searchLbl.text = "Search Results for "+ chr(34) + m.keyboard.text + chr(34)
     for each result in m.results
@@ -47,6 +48,7 @@ sub onSearchResponse(obj)
       m.resultsGridContent.appendChild(gridposter)
     end for
     m.resultsGrid.content = m.resultsGridContent
+    m.resultsGrid.visible = true
     m.resultsGrid.setFocus(true)
   end if
   m.searchLoadingOverlay.visible = false
