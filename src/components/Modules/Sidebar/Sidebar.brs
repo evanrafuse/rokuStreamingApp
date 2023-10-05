@@ -43,10 +43,8 @@ sub showScreen()
     m.global.screenManager.callFunc("openScreen", {"index":"SearchScreen"})
   else if 1 = m.buttonIndex
     m.global.screenManager.callFunc("openScreen", {"index":"FavoritesScreen"})
-    ? "Open Favorites Screen"
   else if 2 = m.buttonIndex
     m.global.screenManager.callFunc("openScreen", {"index":"SettingsScreen"})
-    ? "Open Settings Screen"
   end if
 end sub
 

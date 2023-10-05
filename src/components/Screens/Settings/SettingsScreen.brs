@@ -1,6 +1,7 @@
 sub init()
   ? "Settings Screen Init"
   m.placeholder = m.top.FindNode("placeholder")
+  m.config = m.global.config
 end sub
 
 sub screenShow()

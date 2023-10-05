@@ -5,6 +5,7 @@ sub init()
   m.heroBanner.ObserveFieldScoped("heroReady", "heroReadyStatus")
   m.rowList = m.top.findNode("exampleRowList")
   m.rowList.ObserveFieldScoped("rowItemFocused","changeFocus")
+  m.rowList.ObserveFieldScoped("rowItemSelected","movieSelected")
   m.sideBar = m.top.findNode("sideBar")
   m.sideBarAnim = m.top.findNode("sideBarAnim")
   m.sideBarSlideAnim = m.top.findNode("sideBarSlideAnim")
@@ -43,6 +44,20 @@ sub changeFocus(obj)
   col = newFocus[1]
   contentData = m.top.rowContent[row].content[col]
   m.heroBanner.heroContent = contentData
+end sub
+
+sub movieSelected(obj)
+  newFocus = obj.getData()
+  row = newFocus[0]
+  col = newFocus[1]
+  contentData = m.top.rowContent[row].content[col]
+  ' ? "selected: "; contentData
+  params = {
+    "index":"ContentDetailsScreen",
+    "content": contentData,
+    "previousScreen": "HomeScreen"
+  }
+  m.global.screenManager.callFunc("openScreen", params)
 end sub
 
 sub heroReadyStatus(obj)

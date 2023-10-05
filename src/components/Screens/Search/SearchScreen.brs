@@ -1,6 +1,6 @@
 sub init()
 
-  m.config = ParseJson(ReadAsciiFile("pkg:/config/config.json"))
+  m.config = m.global.config
 
   m.keyboard = m.top.FindNode("keyboard")
   m.searchBtn = m.top.FindNode("searchBtn")
@@ -18,7 +18,8 @@ sub searchBtnInput(event)
   key = "?api_key=" + m.config.api_keys.tmdbKey
   rating = m.config.tmdbConfig.rating
   lang = m.config.tmdbConfig.language
-  url = m.config.tmdbConfig.baseUrl + "search/movie" + key + rating + lang + "&query=" + m.keyboard.text
+  searchQuery = m.keyboard.text.Replace(" ", "%20")
+  url = m.config.tmdbConfig.baseUrl + "search/movie" + key + rating + lang + "&query=" + searchQuery
   m.contentTask = createObject("roSGNode", "restTask")
   m.contentTask.observeField("response", "onSearchResponse")
   m.contentTask.request = {"url":url, "index":"Search"}
@@ -57,7 +58,13 @@ end sub
 
 sub resultSelected(obj)
   selection = obj.getData()
-  ? "Selection: "; m.results[selection]
+  ' ? "Selection: "; m.results[selection]
+  params = {
+    "index":"ContentDetailsScreen",
+    "content": m.results[selection],
+    "previousScreen": "SearchScreen"
+  }
+  m.global.screenManager.callFunc("openScreen", params)
 end sub
 
 sub clearSearch()

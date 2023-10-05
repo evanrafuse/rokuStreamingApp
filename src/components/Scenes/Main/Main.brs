@@ -7,12 +7,13 @@ sub init()
   m.global.screenManager.ObserveFieldScoped("screenReady", "hideLoadingOverlay")
   m.useFallbacks = false
   m.rowContent = []
-  getConfig()
+  m.config = ParseJson(ReadAsciiFile("pkg:/config/config.json"))
+  m.global.addFields({"config": m.config})
+  m.catIDs = ParseJson(ReadAsciiFile("pkg:/config/categoryIds.json"))
+  buildRows()
 end sub
 
-sub getConfig()
-  m.config = ParseJson(ReadAsciiFile("pkg:/config/config.json"))
-  m.catIDs = ParseJson(ReadAsciiFile("pkg:/config/categoryIds.json"))
+sub buildRows()
   if m.useFallbacks
     getRowFallback()
     createHome()

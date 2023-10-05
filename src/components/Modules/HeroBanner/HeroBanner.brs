@@ -1,5 +1,5 @@
 sub init()
-  m.config = ParseJson(ReadAsciiFile("pkg:/config/config.json"))
+  m.config = m.global.config
   m.top.layoutDirection = "horiz"
   m.moviePoster = m.top.findNode("moviePoster")
   m.heroDetails = m.top.findNode("heroDetails")

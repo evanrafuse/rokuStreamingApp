@@ -2,8 +2,7 @@ sub init()
   m.top.layoutDirection = "vert"
   m.top.horizAlignment = "center"
   m.top.itemSpacings = [25]
-  m.config = ParseJson(ReadAsciiFile("pkg:/config/config.json"))
-  m.categoryIds = ParseJson(ReadAsciiFile("pkg:/config/categoryIds.json"))
+  m.config = m.global.config
   m.movieLogo = m.top.findNode("movieLogo")
   m.genreLbl = m.top.findNode("genreLabel")
   m.dateLbl = m.top.findNode("dateLabel")
@@ -20,7 +19,6 @@ end sub
 sub getHeroLogo(id)
   key = "?api_key=" + m.config.api_keys.tmdbKey
   url = m.config.tmdbConfig.baseUrl + "movie/" + id.ToStr() + "/images" + key
-  ' ? "getHeroLogo at: "; url
   m.heroLogoTask = createObject("roSGNode", "restTask")
   m.heroLogoTask.observeField("response", "onHeroLogoResponse")
   m.heroLogoTask.request = {"url":url, "index":"heroLogo"}
@@ -36,7 +34,6 @@ sub onHeroLogoResponse(obj)
       exit for
     end if
   end for
-  ' ? "onHeroLogoResponse: "; heroLogoUrl
   m.movieLogo.uri = heroLogoUrl
   m.top.logoReady = true
 end sub
