@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="SettingsScreen" extends="CoreScreen">
+  <script type="text/brightscript" uri="SettingsScreen.brs" />
+
+  <interface>
+    <function name="screenShow" />
+  </interface>
+  <children>
+    <Poster
+      id="placeholder"
+      uri="pkg:/assets/images/settingsScreenPlaceholder.png"
+      width="1920"
+      height="1080"
+      translation="[0, 0]"
+      visible="true"
+    />
+  </children>
+</component>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="FavoritesScreen" extends="CoreScreen">
+  <script type="text/brightscript" uri="FavoritesScreen.brs" />
+
+  <interface>
+    <function name="screenShow" />
+  </interface>
+  <children>
+    <Poster
+      id="placeholder"
+      uri="pkg:/assets/images/favoritesScreenPlaceholder.png"
+      width="1920"
+      height="1080"
+      translation="[0, 0]"
+      visible="true"
+    />
+  </children>
+</component>

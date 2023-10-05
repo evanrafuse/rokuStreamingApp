@@ -22,6 +22,22 @@ sub openScreen(params)
       m.screens.AddReplace(params.index, searchScreen)
     end if
     searchScreen.callFunc("screenShow")
+  else if "SettingsScreen" = params.index
+    m.screens.Lookup("HomeScreen").visible = false
+    settingsScreen = m.screens.Lookup(params.index)
+    if invalid = settingsScreen
+      settingsScreen = m.scene.createChild("SettingsScreen")
+      m.screens.AddReplace(params.index, settingsScreen)
+    end if
+    settingsScreen.callFunc("screenShow")
+  else if "FavoritesScreen" = params.index
+    m.screens.Lookup("HomeScreen").visible = false
+    favoritesScreen = m.screens.Lookup(params.index)
+    if invalid = favoritesScreen
+      favoritesScreen = m.scene.createChild("FavoritesScreen")
+      m.screens.AddReplace(params.index, favoritesScreen)
+    end if
+    favoritesScreen.callFunc("screenShow")
   end if
 end sub
 
