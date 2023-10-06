@@ -38,6 +38,14 @@ sub openScreen(params)
       m.screens.AddReplace(params.index, favoritesScreen)
     end if
     favoritesScreen.callFunc("screenShow")
+  else if "ContentDetailsScreen" = params.index
+    m.screens.Lookup(params.previousScreen).visible = false
+    contentDetailsScreen = m.screens.Lookup(params.index)
+    if invalid = contentDetailsScreen
+      contentDetailsScreen = m.scene.createChild("contentDetailsScreen")
+      m.screens.AddReplace(params.index, contentDetailsScreen)
+    end if
+    contentDetailsScreen.callFunc("screenShow", params)
   end if
 end sub
 

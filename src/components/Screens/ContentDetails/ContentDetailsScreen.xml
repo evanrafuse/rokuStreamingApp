@@ -4,28 +4,63 @@
   <script type="text/brightscript" uri="ContentDetailsScreen.brs" />
 
   <interface>
-    <field id="showScreen" type="boolean" value="false" onChange="showScreen" />
+    <function name="screenShow" />
+    <field id="previousScreen" type="string" value="HomeScreen"/>
+    <field id="content" type="AssocArray" />
   </interface>
-
   <children>
     <Poster
-      id = "backgroundPoster"
+      id="background"
+      uri="pkg:/assets/images/contentDetailsScreenPlaceholder.png"
+      width="1920"
+      height="1080"
+      translation="[0, 0]"
+      visible="true"
+      opacity="0.3"
     />
-    <Sidebar
-      id="sideBar"
-      translation="[-200, 0]"
+    <Poster
+      id="movieLogo"
+      uri="https://image.tmdb.org/t/p/w500/xjzbSDGtnxnr2E1eXWTEcmVbuZR.png"
+      translation="[50, 300]"
+      height="200"
     />
-    <Animation
-      id="sideBarAnim"
-      duration="0.5"
-      repeat="false"
-      easeFunction="linear">
-      <Vector2DFieldInterpolator
-        id="sideBarSlideAnim"
-        fieldToInterp="sideBar.translation"
-        key="[0.0, 1.0]"
-        keyValue="[ [-200, 0], [0, 0] ]"
-      />
-    </Animation>
+    <Label
+      id="metaDataLabel"
+      text = "Genre, Genre, Genre | Runtime | Release Date"
+      font="font:SmallestSystemFont"
+      translation="[50, 550]"
+      width="800"
+    />
+    <Label
+      id="taglineLabel"
+      text = "This is the Tagline"
+      font="font:LargeBoldSystemFont"
+      translation="[50, 620]"
+      width="1000"
+    />
+    <Button
+      id="playBtn"
+      translation="[50, 680]"
+      minWidth="165"
+      text="Play!"
+      iconUri=""
+      focusedIconUri=""
+    />
+    <Button
+      id="favoriteBtn"
+      translation="[205, 680]"
+      minWidth="230"
+      text="Favorite"
+      iconUri=""
+      focusedIconUri=""
+    />
+    <Label
+      id="descriptionLabel"
+      text = "EXAMPLE TEXT"
+      wrap = "true"
+      translation="[50, 800]"
+      width="1000"
+      maxLines = "5"
+    />
   </children>
 </component>
