@@ -12,7 +12,7 @@
     <MaskGroup
       id="maskGrp"
       maskUri="pkg:/assets/images/mask.png"
-      maskSize="[700,540]"
+      maskSize="[960,540]"
     >
       <Poster
         id="moviePoster"
