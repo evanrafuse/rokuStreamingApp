@@ -10,6 +10,29 @@ sub init()
   m.config = ParseJson(ReadAsciiFile("pkg:/config/config.json"))
   m.global.addFields({"config": m.config})
   m.catIDs = ParseJson(ReadAsciiFile("pkg:/config/categoryIds.json"))
+  getUserRegData()
+  ' buildRows()
+end sub
+
+sub getUserRegData()
+  'Categories
+  regSec = CreateObject("roRegistrySection", "CategorySection")
+  if regSec.Exists("CategorySection")
+    response = regSec.Read("CategorySection")
+    ? "Response from registry: "
+    m.categories = ParseJson(response)
+  else
+    ? "Category Data not found!"
+    m.categories = []
+    for each category in m.config.tmdbConfig.defaultGenres.movie
+      m.categories.push({"title":category, "state":false})
+    end for
+    m.categories[2].state = true
+    m.categories[1].state = true
+    m.categories[0].state = true
+    regSec.Write("CategorySection", FormatJson(m.categories))
+  end if
+  regSec.Flush()
   buildRows()
 end sub
 
@@ -20,9 +43,11 @@ sub buildRows()
   else
     getRowContent({"index":"Most Popular", "rowType":"popular"}) 'Featured Row
     ' getRowContent({"index":"Top Rated", "rowType":"top"})
-    for each category in m.config.tmdbConfig.defaultGenres.movie
-      params = {"index":category, "rowType":"genre"}
-      getRowContent(params)
+    for each category in m.categories
+      if category.state
+        params = {"index":category.title, "rowType":"genre"}
+        getRowContent(params)
+      end if
     end for
   end if
 end sub
