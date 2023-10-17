@@ -4,17 +4,8 @@ sub init()
   m.optionsButtons.ObserveFieldScoped("buttonSelected", "onOptionSelected")
   m.config = m.global.config
   ' m.catIDs = ParseJson(ReadAsciiFile("pkg:/config/categoryIds.json"))
-
   m.categoryList = m.top.FindNode("categoryList")
-  categories = ["Action", "Adventure", "Animation", "Comedy", "Drama"]
-  m.categoryContent = createObject("roSGNode","ContentNode")
-  for each category in categories
-    ? category
-    categoryName = createObject("roSGNode","ContentNode")
-    categoryName.title = category
-    m.categoryContent.appendChild(categoryName)
-  end for
-  m.categoryList.appendChild(m.categoryContent)
+  m.categoryContent = m.top.FindNode("categoryContent")
 
 end sub
 
@@ -24,20 +15,98 @@ sub screenShow()
   m.optionsButtons.setFocus(true)
 end sub
 
+sub showCategories()
+  categories = [{"title":"Action", "state":true}, {"title":"Adventure", "state":false}, {"title":"Animation", "state":false}, {"title":"Comedy", "state":false}, {"title":"Drama", "state":true}]
+  checkStates = []
+  for each category in categories
+    ? category.title
+    categoryName = createObject("roSGNode","ContentNode")
+    categoryName.title = category.title
+    m.categoryContent.appendChild(categoryName)
+    checkStates.Push(category.state)
+  end for
+  m.categoryList.appendChild(m.categoryContent)
+  m.categoryList.checkedState = checkStates
+  m.categoryList.visible = true
+end sub
+
+sub showClearFavoritesDialog()
+  m.clearFavoritesDialog = createObject("roSGNode", "Dialog")
+  m.clearFavoritesDialog.backgroundUri = "pkg:/assets/images/dialogBackground.9.png"
+  m.clearFavoritesDialog.title = "Clear Favorites"
+  m.clearFavoritesDialog.message = "Would you like to clear favorited shows?"
+  m.clearFavoritesDialog.buttons = ["OK","Cancel"]
+  m.clearFavoritesDialog.ObserveFieldScoped("buttonSelected", "clearFavoritesButtonSelected")
+  scene = m.top.GetScene()
+  scene.dialog = m.clearFavoritesDialog
+end sub
+
+sub clearFavoritesButtonSelected(event)
+  btnIndex = event.getData()
+  m.clearFavoritesDialog.close = true
+  if 0 = btnIndex
+    ? "Clear Favorites!"
+  else
+    ? "Cancel Clear Favorites!"
+  end if
+end sub
+
+sub showClearSearchDialog()
+  m.clearSearchDialog = createObject("roSGNode", "Dialog")
+  m.clearSearchDialog.backgroundUri = "pkg:/assets/images/dialogBackground.9.png"
+  m.clearSearchDialog.title = "Clear Search History"
+  m.clearSearchDialog.message = "Would you like to clear search history?"
+  m.clearSearchDialog.buttons = ["OK","Cancel"]
+  m.clearSearchDialog.ObserveFieldScoped("buttonSelected", "clearSearchButtonSelected")
+  scene = m.top.GetScene()
+  scene.dialog = m.clearSearchDialog
+end sub
+
+sub clearSearchButtonSelected(event)
+  btnIndex = event.getData()
+  m.clearSearchDialog.close = true
+  if 0 = btnIndex
+    ? "Clear Search History!"
+  else
+    ? "Cancel Clear Search History!"
+  end if
+end sub
+
+sub showLogoutDialog()
+  m.logoutDialog = createObject("roSGNode", "Dialog")
+  m.logoutDialog.backgroundUri = "pkg:/assets/images/dialogBackground.9.png"
+  m.logoutDialog.title = "Logout"
+  m.logoutDialog.message = "Would you like to log out?"
+  m.logoutDialog.buttons = ["OK","Cancel"]
+  m.logoutDialog.ObserveFieldScoped("buttonSelected", "logoutButtonSelected")
+  scene = m.top.GetScene()
+  scene.dialog = m.logoutDialog
+end sub
+
+sub logoutButtonSelected(event)
+  btnIndex = event.getData()
+  m.logoutDialog.close = true
+  if 0 = btnIndex
+    ? "Logout of Channel!"
+  else
+    ? "Cancel Logout!"
+  end if
+end sub
+
 sub onOptionSelected(obj)
-  ? "TEST"
-  ? "TEST"
-  ? "TEST"
   selection = obj.getData()
-  if 1 = selection
+  if 0 = selection
     ? "Categories selected!"
-    ? ""
-  else if 2 = selection
+    showCategories()
+  else if 1 = selection
     ? "Clear Favorites selected!"
-  else if 3 = selection
+    showClearFavoritesDialog()
+  else if 2 = selection
     ? "Clear Search History selected!"
-  else if 4 = selection
+    showClearSearchDialog()
+  else if 3 = selection
     ? "Log Out selected!"
+    showLogoutDialog()
   end if
 end sub
 

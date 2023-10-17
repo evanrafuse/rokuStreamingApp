@@ -14,8 +14,14 @@
     />
     <CheckList
       id="categoryList"
-      translation="[1090,400]"
+      translation="[100,100]"
+      visible="false"
     >
+      <ContentNode
+        id = "categoryContent"
+        role = "content"
+      >
+      </ContentNode>
     </CheckList>
   </children>
 </component>
