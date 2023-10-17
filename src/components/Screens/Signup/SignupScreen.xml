@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="SignupScreen" extends="CoreScreen">
+  <script type="text/brightscript" uri="SignupScreen.brs" />
+
+  <interface>
+    <function name="screenShow" />
+  </interface>
+  <children>
+    <MiniKeyboard
+      id="keyboard"
+      translation="[35, 100]"
+    />
+    <Button
+      id="searchBtn"
+      translation="[60, 790]"
+      minWidth="200"
+      text="Create Account"
+      iconUri=""
+      focusedIconUri=""
+    />
+  </children>
+</component>
